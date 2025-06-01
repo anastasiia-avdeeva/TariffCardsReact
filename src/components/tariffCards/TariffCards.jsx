@@ -8,8 +8,8 @@ const cx = classNames.bind(styles);
 export const TariffCards = () => {
   return (
     <div className={cx("cards")}>
-      {tariffs.map((tariff) => (
-        <TariffCard key={tariff.id} card={tariff} />
+      {tariffs.map((tariff, index) => (
+        <TariffCard key={tariff.id} card={tariff} highlight={index === 2} />
       ))}
     </div>
   );

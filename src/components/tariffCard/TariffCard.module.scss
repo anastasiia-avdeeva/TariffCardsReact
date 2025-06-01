@@ -98,3 +98,15 @@
     background-color: #323a44;
   }
 }
+
+.card--bigger {
+  box-shadow: 3px 3px 18px 0px #e4e4e4;
+
+  .card__title {
+    padding: 40px 0px;
+  }
+
+  .card__price {
+    padding: 60px 0px;
+  }
+}
