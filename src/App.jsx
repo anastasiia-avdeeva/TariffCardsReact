@@ -1,5 +1,7 @@
+import { MainBlock } from "./components/mainBlock/MainBlock";
+
 function App() {
-  return <></>;
+  return <MainBlock />;
 }
 
 export default App;
