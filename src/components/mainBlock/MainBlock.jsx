@@ -1,4 +1,4 @@
-import { TariffCards } from "../tariffCards/TariffCards";
+import { TariffCards } from "../TariffCards/TariffCards";
 import styles from "./MainBlock.module.scss";
 import classNames from "classnames/bind";
 

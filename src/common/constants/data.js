@@ -5,6 +5,7 @@ export const tariffs = [
     price: 300,
     speedLimit: 10,
     category: "basic",
+    important: false,
   },
   {
     id: 2,
@@ -12,6 +13,7 @@ export const tariffs = [
     price: 450,
     speedLimit: 50,
     category: "standard",
+    important: false,
   },
   {
     id: 3,
@@ -19,6 +21,7 @@ export const tariffs = [
     price: 550,
     speedLimit: 100,
     category: "premium",
+    important: true,
   },
   {
     id: 4,
@@ -26,5 +29,6 @@ export const tariffs = [
     price: 1000,
     speedLimit: 200,
     category: "ultimate",
+    important: false,
   },
 ];

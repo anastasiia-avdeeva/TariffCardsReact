@@ -1,4 +1,4 @@
-import { MainBlock } from "./components/mainBlock/MainBlock";
+import { MainBlock } from "./components/MainBlock/MainBlock";
 
 function App() {
   return <MainBlock />;

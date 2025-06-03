@@ -3,11 +3,11 @@ import classNames from "classnames/bind";
 
 const cx = classNames.bind(styles);
 
-export const TariffCard = ({ card, highlight }) => {
+export const TariffCard = ({ card, important }) => {
   const variant = card.category;
 
   return (
-    <div className={cx("card", highlight && "card--bigger")}>
+    <div className={cx("card", important && "card--bigger")}>
       <h2 className={cx("card__title", variant && `card__title--${variant}`)}>
         {card.name}
       </h2>
