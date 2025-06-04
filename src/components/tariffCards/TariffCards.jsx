@@ -9,11 +9,7 @@ export const TariffCards = () => {
   return (
     <div className={cx("cards")}>
       {tariffs.map((tariff) => (
-        <TariffCard
-          key={tariff.id}
-          card={tariff}
-          important={tariff.important}
-        />
+        <TariffCard key={tariff.id} card={tariff} />
       ))}
     </div>
   );

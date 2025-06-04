@@ -1,14 +1,16 @@
 import styles from "./TariffCard.module.scss";
 import classNames from "classnames/bind";
+import { catigories, importance } from "../../common/constants/data";
 
 const cx = classNames.bind(styles);
 
-export const TariffCard = ({ card, important }) => {
-  const variant = card.category;
+export const TariffCard = ({ card }) => {
+  const category = catigories[card.id];
+  const isImportant = importance[card.id];
   const cardClasses = cx(
     "card",
-    variant && `card--${variant}`,
-    important && "card--bigger"
+    category && `card--${category}`,
+    isImportant && "card--bigger"
   );
 
   return (
