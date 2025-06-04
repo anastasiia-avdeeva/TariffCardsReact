@@ -7,8 +7,8 @@ export const TariffCard = ({ card, important }) => {
   const variant = card.category;
   const cardClasses = cx(
     "card",
-    important && "card--bigger",
-    variant && `card--${variant}`
+    variant && `card--${variant}`,
+    important && "card--bigger"
   );
 
   return (
