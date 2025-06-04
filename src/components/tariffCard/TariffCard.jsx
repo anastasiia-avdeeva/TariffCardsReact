@@ -5,13 +5,16 @@ const cx = classNames.bind(styles);
 
 export const TariffCard = ({ card, important }) => {
   const variant = card.category;
+  const cardClasses = cx(
+    "card",
+    important && "card--bigger",
+    variant && `card--${variant}`
+  );
 
   return (
-    <div className={cx("card", important && "card--bigger")}>
-      <h2 className={cx("card__title", variant && `card__title--${variant}`)}>
-        {card.name}
-      </h2>
-      <p className={cx("card__price", variant && `card__price--${variant}`)}>
+    <div className={cardClasses}>
+      <h2 className={cx("card__title")}>{card.name}</h2>
+      <p className={cx("card__price")}>
         <span className={cx("card__price-num")}>{card.price}</span>
         <span className={cx("card__price-currency")}>руб</span>
         <span className={cx("card__price-period")}> /мес</span>

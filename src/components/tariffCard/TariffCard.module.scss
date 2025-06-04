@@ -66,39 +66,46 @@
   }
 
   //special cases
-  &__title--basic {
-    background-color: #1f9eab;
+  &--basic {
+    .card__title {
+      background-color: #1f9eab;
+    }
+
+    .card__price {
+      background-color: #2bc1d5;
+    }
   }
 
-  &__price--basic {
-    background-color: #2bc1d5;
+  &--standard {
+    .card__title {
+      background-color: #1f8972;
+    }
+    .card__price {
+      background-color: #26ad8d;
+    }
   }
 
-  &__title--standard {
-    background-color: #1f8972;
+  &--premium {
+    .card__title {
+      background-color: #c3554d;
+    }
+
+    .card__price {
+      background-color: #f4695f;
+    }
   }
 
-  &__price--standard {
-    background-color: #26ad8d;
-  }
-
-  &__title--premium {
-    background-color: #c3554d;
-  }
-
-  &__price--premium {
-    background-color: #f4695f;
-  }
-
-  &__title--ultimate {
-    background-color: #2c3039;
-  }
-
-  &__price--ultimate {
-    background-color: #323a44;
+  &--ulitimate {
+    .card__title {
+      background-color: #2c3039;
+    }
+    .card__price {
+      background-color: #323a44;
+    }
   }
 }
 
+// highlight card
 .card--bigger {
   box-shadow: 3px 3px 18px 0px #e4e4e4;
 
