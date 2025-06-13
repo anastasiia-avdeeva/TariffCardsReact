@@ -1,20 +1,19 @@
 import styles from "./TariffCard.module.scss";
 import classNames from "classnames/bind";
-import { catigories, importance } from "../../common/constants/data";
+import { catigories } from "../../common/constants/data";
 
 const cx = classNames.bind(styles);
 
-export const TariffCard = ({ card }) => {
+export const TariffCard = ({ card, chosen = false, onChoose }) => {
   const category = catigories[card.id];
-  const isImportant = importance[card.id];
   const cardClasses = cx(
     "card",
     category && `card--${category}`,
-    isImportant && "card--bigger"
+    chosen && "card--bigger"
   );
 
   return (
-    <div className={cardClasses}>
+    <div className={cardClasses} onClick={onChoose}>
       <h2 className={cx("card__title")}>{card.name}</h2>
       <p className={cx("card__price")}>
         <span className={cx("card__price-num")}>{card.price}</span>

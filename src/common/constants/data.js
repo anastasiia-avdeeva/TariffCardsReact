@@ -31,10 +31,3 @@ export const catigories = {
   3: "premium",
   4: "ultimate",
 };
-
-export const importance = {
-  1: false,
-  2: false,
-  3: true,
-  4: true,
-};
